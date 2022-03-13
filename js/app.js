@@ -6,27 +6,13 @@ const logoutForm = document.querySelector("#logout-form");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "userName";
 
+const savedUserName = localStorage.getItem(USERNAME_KEY);
+
 function onLoginSubmit(event) {
     const userName = loginInput.value;
     event.preventDefault();
     localStorage.setItem(USERNAME_KEY, userName);
     paintGreetings(userName);
-}
-
-function hide(content) {
-    content.classList.add(HIDDEN_CLASSNAME);
-}
-
-function show(content) {
-    content.classList.remove(HIDDEN_CLASSNAME);
-}
-
-function paintGreetings(username) {
-    greeting.innerText = `Hello, ${username}!`;
-    show(greeting);
-    hide(loginForm);
-    show(logoutForm);
-    logoutForm.addEventListener("submit", onLogOutSubmit);
 }
 
 function onLogOutSubmit(event) {
@@ -38,11 +24,25 @@ function onLogOutSubmit(event) {
     loginInput.value = null;
 }
 
-const savedUserName = localStorage.getItem(USERNAME_KEY);
+function paintGreetings(username) {
+    greeting.innerText = `Hello, ${username}!`;
+    show(greeting);
+    hide(loginForm);
+    show(logoutForm);
+    logoutForm.addEventListener("submit", onLogOutSubmit);
+}
 
 if (savedUserName === null) {
     show(loginForm);
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     paintGreetings(savedUserName);;
+}
+
+function hide(content) {
+    content.classList.add(HIDDEN_CLASSNAME);
+}
+
+function show(content) {
+    content.classList.remove(HIDDEN_CLASSNAME);
 }
