@@ -1,4 +1,11 @@
-const quotes = [{
+
+const quotes = [
+    {
+        quote: 'I have achieved everything I thought, said and did, and will continue to do so.',
+        author: ''
+    },
+    
+    {
         quote: 'I never dreamed about success, I worked for it',
         author: 'Estee Lauder'
     },
@@ -43,9 +50,7 @@ const quotes = [{
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
-
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
-
 
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
