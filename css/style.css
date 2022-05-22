@@ -33,3 +33,8 @@ input {
 button {
     border: none;
 }
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+}
