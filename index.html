@@ -14,30 +14,30 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
 </head>
 
-<body class="gradient">
-    <form class="hidden" id="login-form">
-        <input required />
-        <input type="submit" class="btn" value="Log In" />
-    </form>
+<body>
     <h1 id="clock">00:00:00</h1>
+
     <div id="weather">
         <span></span>
         <span></span>
     </div>
+
+    <form id="login-form" class="hidden">
+        <input id="login-input" type="text" class="">
+        <input type="submit" class="btn" value="Log In" />
+    </form>
     <section class="vh-100">
         <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
+
+            <div class="col">
+                <div class="row d-flex justify-content-center align-items-center h-100">
 
 
-                <div class="col">
+
                     <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
 
                         <div class="card-body py-4 px-4 px-md-5">
 
-                            <form id="login-form" class="hidden">
-                                <input id="login-input" type="text" class="form-control">
-                                <input type="submit" class="btn" value="Log In" />
-                            </form>
 
                             <p class="h1 text-center mt-3 mb-4 pb-3 hidden" id="">
 
