@@ -30,7 +30,8 @@ function paintToDo(newTodo) {
     span.innerText = newTodo.text;
     span.className = 'lead fw-normal mb-0';
     const button = document.createElement("button");
-    button.innerText = "❌";
+    button.innerText = "𝗑";
+    button.className = 'd-flex flex-row justify-content-end mb-1 list-group-item ps-3 pe-0 py-1 rounded-0 border-0 bg-transparent';
     button.addEventListener("click", deleteTodo)
     li.appendChild(span);
     li.appendChild(button);
