@@ -14,6 +14,9 @@ const gradient = [
     'linear-gradient(to right, rgba(79, 172, 254, 0.5), rgba(0, 242, 254, 0.5))',
     'linear-gradient(to right, rgba(250, 112, 154, 0.5), rgba(254, 225, 64, 0.5))',
     'linear-gradient(to right, rgba(106, 133, 182, 0.5), rgba(186, 200, 224, 0.5))',
+    'linear-gradient(to right, rgba(55, 236, 186, 0.5), rgba(114, 175, 211, 0.5))',
+    'linear-gradient(to right, rgba(255, 241, 235, 0.5), rgba(172, 224, 249, 0.5))'
+
 ];
 
 
