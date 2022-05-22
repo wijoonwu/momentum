@@ -18,10 +18,5 @@ const gradient = [
 
 
 const chosenBgColor = gradient[Math.floor(Math.random() * gradient.length)];
-//const bgImage = document.createElement("img");
-
-//bgImage.src = `img/${chosenImage}`;
-//bgImage.id = "bgImage";
-//document.body.appendChild(bgImage);
 
 document.body.style.background = chosenBgColor;
