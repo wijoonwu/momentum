@@ -25,3 +25,11 @@ h1 {
     align-items: center;
     min-height: 10vh;
 }
+
+input {
+    border: none;
+}
+
+button {
+    border: none;
+}
