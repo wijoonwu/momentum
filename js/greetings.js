@@ -25,7 +25,7 @@ function onLogOutSubmit(event) {
 }
 
 function paintGreetings(username) {
-    greeting.innerText = `Hello, ${username}!`;
+    greeting.innerText = `Hello, ${username}! 🤗`;
     show(greeting);
     hide(loginForm);
     show(logoutForm);
