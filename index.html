@@ -6,25 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum App</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mdb.min.css" />
 </head>
 
 <body class="gradient">
     <form class="hidden" id="login-form">
         <input required />
-        <input type="submit" value="Log In" />
+        <input type="submit" class="btn" value="Log In" />
     </form>
     <h1 id="clock">00:00:00</h1>
     <div id="weather">
         <span></span>
         <span></span>
     </div>
-    <h1 id="greeting" class="hidden">
-    </h1>
-    <form class="todo" id="todo-form">
-        <input type="text" placeholder="What do you need to do today?" required />
-    </form>
-    <ul class="todo" id="todo-list"></ul>
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+
+
+                <div class="col">
+                    <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
+
+                        <div class="card-body py-4 px-4 px-md-5">
+
+                            <form id="login-form" class="hidden">
+                                <input id="login-input" type="text" class="form-control">
+                                <input type="submit" class="btn" value="Log In" />
+                            </form>
+
+                            <p class="h1 text-center mt-3 mb-4 pb-3 hidden" id="">
+
+                                <h1 id="greeting" class="hidden">
+                                </h1>
+                            </p>
+                            <div class="pb-2">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <form id="todo-form" class="d-flex flex-row align-items-center" hidden>
+                                            <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1 todo-input" placeholder="What do you need to do today ?">
+                                            <div>
+                                                <button type="submit" id="todo-" class="btn btn-primary">Add</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <ul id="todo-list" class="list-group list-group-horizontal rounded-0 bg-transparent">
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div id="quote">
         <span></span>
         <span></span>
@@ -35,6 +81,7 @@
     <script defer src="js/background.js"></script>
     <script defer src="js/todo.js"></script>
     <script defer src="js/weather.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 
 </html>
