@@ -1,3 +1,44 @@
 .hidden {
     display: none;
 }
+
+#weather span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blakc;
+    min-height: 10vh;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blakc;
+    flex-direction: column;
+}
+
+#todo-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blakc;
+    flex-direction: column;
+}
+
+#quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blakc;
+    min-height: 70vh;
+    font-size: larger;
+}
